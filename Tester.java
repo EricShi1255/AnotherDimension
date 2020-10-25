@@ -38,6 +38,13 @@ public class Tester {
         //testsfor largestinrows
         System.out.println("LargestInRows(): {{5,10}{20,10}{40,60}} --> {10,20,60} | " + Arrays.toString( ArrayOps.largestInRows(a) ) );
         System.out.println("LargestInRows(): {{5,10}} --> {10} | " + Arrays.toString( ArrayOps.largestInRows(b) ) );
+
+        System.out.println();
+        //testsforsum(2d arrays)
+        System.out.println("sum(): {{5,10}{20,10}{40,60}} --> {145} | " + ArrayOps.sum(a) );
+        System.out.println("sum(): {5,10} --> {15} | " + ArrayOps.sum(b) );
+        System.out.println("sum(): {{}} --> 0 | " + ArrayOps.sum(c) );
+
     }
 
 }

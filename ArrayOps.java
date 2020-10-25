@@ -41,11 +41,16 @@ public static  int[] largestInRows(int[][] matrix) {
     }
     return(result);
 }
-/*
+
 public static  int sum(int[][] arr) {
- 
+    //sum() takes a 2D array of int, and returns the sum of all the individual values in all of the arrays.
+    int total = 0;
+    for (int i = 0; i < arr.length; i++) {
+        total += sum(arr[i]);
+    }
+    return(total); 
 }
-*/
+
 
 
 }
