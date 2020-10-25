@@ -79,5 +79,17 @@ public static boolean isRowMagic(int[][] matrix) {
     return true;
 }
 
+public static boolean isColMagic(int[][] matrix) {
+    //isRowMagic() takes a rectangular 2d array and returns true when each row has the same sum, and false otherwise
+    int[] arr = sumCols(matrix);
+    int first = arr[0];
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] != first) {
+            return false;
+        }
+    }
+    return true;
+}
+
 
 }

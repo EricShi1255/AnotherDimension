@@ -66,5 +66,11 @@ public class Tester {
         System.out.println("isRowMagic(): { {1,2,3,4},{2,3,4,1},{3,4,1,2} } --> true | " + ArrayOps.isRowMagic(magica));
         System.out.println("isRowMagic(): { {1,1,1},{2,2,2},{3,3,3} } --> false | " + ArrayOps.isRowMagic(magicb));
         System.out.println("isRowMagic(): { {2,2,2}, {2,2,2} } --> true | " + ArrayOps.isRowMagic(magicc));
+
+        System.out.println();
+
+        System.out.println("isColMagic(): { {1,2,3,4},{2,3,4,1},{3,4,1,2} } --> false | " + ArrayOps.isColMagic(magica));
+        System.out.println("isColMagic(): { {1,1,1},{2,2,2},{3,3,3} } --> true | " + ArrayOps.isColMagic(magicb));
+        System.out.println("isColMagic(): { {2,2,2}, {2,2,2} } --> true | " + ArrayOps.isColMagic(magicc));
     }
 }
