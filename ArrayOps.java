@@ -1,7 +1,14 @@
 public class ArrayOps {
-public static int sum(int[] arr) {
 
+    public static int sum(int[] arr) {
+//sum() takes an array of int, and returns a sum of the individual values in the array.
+    int sum = 0;
+    for (int i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum; 
 }
+
 public static  int largest(int[]arr) {
 
 }
