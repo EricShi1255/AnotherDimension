@@ -52,5 +52,5 @@ public class Tester {
         int[][]  A = { {  1,  0, 12, -1 }, {  7, -2,  2,  1 }, { -5, -2,  2, -9 } };
         System.out.println("sumCols(): {{1,0,12,-1}, {7,-2,2,1}, {-5,-2,2,-9}} --> [3, -4, 16, -9] | " +  Arrays.toString(ArrayOps.sumCols(A)) );
     }
-
+    
 }
