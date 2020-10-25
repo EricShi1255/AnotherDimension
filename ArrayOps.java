@@ -51,6 +51,22 @@ public static  int sum(int[][] arr) {
     return(total); 
 }
 
+public static int[] sumCols(int[][] matrix) {
+    //sumCols takes a 2D array that must be rectangular (all rows have the same length)
+    //returns a 1D array of int with each element being the sum of the individual columns of the 2D array.
+    //array_name.length --> row
+    //array_name[0].length --> col
+    int[] arr = new int[matrix[0].length];
+    for (int i = 0; i < matrix[0].length; i++) {
+        int sumcol = 0;
+        for (int j = 0; j < matrix.length; j++) {
+            sumcol += matrix[j][i];
+        }
+        arr[i] = sumcol;
+    }
+    return(arr);
+}
+
 
 
 }

@@ -40,11 +40,17 @@ public class Tester {
         System.out.println("LargestInRows(): {{5,10}} --> {10} | " + Arrays.toString( ArrayOps.largestInRows(b) ) );
 
         System.out.println();
+        
         //testsforsum(2d arrays)
         System.out.println("sum(): {{5,10}{20,10}{40,60}} --> {145} | " + ArrayOps.sum(a) );
         System.out.println("sum(): {5,10} --> {15} | " + ArrayOps.sum(b) );
         System.out.println("sum(): {{}} --> 0 | " + ArrayOps.sum(c) );
 
+        System.out.println();
+
+        //testsforsumCols
+        int[][]  A = { {  1,  0, 12, -1 }, {  7, -2,  2,  1 }, { -5, -2,  2, -9 } };
+        System.out.println("sumCols(): {{1,0,12,-1}, {7,-2,2,1}, {-5,-2,2,-9}} --> [3, -4, 16, -9] | " +  Arrays.toString(ArrayOps.sumCols(A)) );
     }
 
 }
