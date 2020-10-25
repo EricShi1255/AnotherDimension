@@ -11,10 +11,18 @@ public class ArrayOps {
     }
     return sum; 
 }
-/*
+
 public static  int largest(int[]arr) {
-   
+    //largest() takes a non-empty array of int, and returns the largest element of the array
+    int big = arr[0];
+    for (int i = 0; i < arr.length;i++) {
+        if (arr[i] > big) {
+            big = arr[i];
+        }
+    }
+    return big; 
 }
+/*
 public static int[] sumRows(int[][] matrix) {
    
 }
