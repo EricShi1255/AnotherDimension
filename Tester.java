@@ -31,7 +31,7 @@ public class Tester {
         int[][] c = new int[][]{{}};
         System.out.println("SumRows(): {{5,10}{20,10}{40,60}} --> {15,30,100} | " + Arrays.toString( ArrayOps.sumRows(a) ) );
         System.out.println("SumRows(): {{5,10}} --> {15,30,100} | " + Arrays.toString( ArrayOps.sumRows(b) ) );  
-        System.out.println("SumRows(): {{}} --> {} | " + Arrays.toString( ArrayOps.sumRows(c) ) );  
+        System.out.println("SumRows(): {{}} --> {0} | " + Arrays.toString( ArrayOps.sumRows(c) ) );  
 
         System.out.println();
 
@@ -51,6 +51,20 @@ public class Tester {
         //testsforsumCols
         int[][]  A = { {  1,  0, 12, -1 }, {  7, -2,  2,  1 }, { -5, -2,  2, -9 } };
         System.out.println("sumCols(): {{1,0,12,-1}, {7,-2,2,1}, {-5,-2,2,-9}} --> [3, -4, 16, -9] | " +  Arrays.toString(ArrayOps.sumCols(A)) );
+
+        System.out.println();
+
+        //testsfor magics
+        int[][] magica = { {  1,  2, 3, 4 },
+        {  2, 3,  4,  1 },
+        { 3, 4,  1, 2 } };  //this is rowMagic but NOT colMagic
+        int[][] magicb = { {  1,  1, 1 },
+        {  2, 2, 2 },
+        { 3,  3, 3 } };  //this is colMagic but NOT rowMagic
+        int[][] magicc = { {  2,  2, 2 },
+        {  2, 2, 2 } };  //this is both colMagic AND rowMagic
+        System.out.println("isRowMagic(): { {1,2,3,4},{2,3,4,1},{3,4,1,2} } --> true | " + ArrayOps.isRowMagic(magica));
+        System.out.println("isRowMagic(): { {1,1,1},{2,2,2},{3,3,3} } --> false | " + ArrayOps.isRowMagic(magicb));
+        System.out.println("isRowMagic(): { {2,2,2}, {2,2,2} } --> true | " + ArrayOps.isRowMagic(magicc));
     }
-    
 }
