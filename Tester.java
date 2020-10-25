@@ -72,5 +72,16 @@ public class Tester {
         System.out.println("isColMagic(): { {1,2,3,4},{2,3,4,1},{3,4,1,2} } --> false | " + ArrayOps.isColMagic(magica));
         System.out.println("isColMagic(): { {1,1,1},{2,2,2},{3,3,3} } --> true | " + ArrayOps.isColMagic(magicb));
         System.out.println("isColMagic(): { {2,2,2}, {2,2,2} } --> true | " + ArrayOps.isColMagic(magicc));
+
+        System.out.println();
+
+        //testing final one
+        int[][]E = { 
+            {  2,  4, 2 }, 
+            {  2, 2, 2 } };
+        System.out.println("isLocationMagic(E, 0, 1) --> False | " + ArrayOps.isLocationMagic(E, 0, 1));
+        System.out.println("isLocationMagic(E, 1, 1) --> True | " + ArrayOps.isLocationMagic(E, 1, 1));
+
+        
     }
 }

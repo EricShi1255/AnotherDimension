@@ -91,5 +91,17 @@ public static boolean isColMagic(int[][] matrix) {
     return true;
 }
 
+public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+  //takes a rectangular 2d array and returns true when the row and column specified have the same sum.
+    int[] rowa = sumRows(matrix);
+    int[] cola = sumCols(matrix);
+    if  (rowa[row] == cola[col]) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 
 }
