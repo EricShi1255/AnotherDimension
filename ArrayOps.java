@@ -31,10 +31,17 @@ public static int[] sumRows(int[][] matrix) {
     }
     return(result);
 }
-/*
+
 public static  int[] largestInRows(int[][] matrix) {
-    
+    //largestInRows() takes a nonempty 2D array of int, the inner arrays cannot be empty either, 
+    // returns a 1D array of int with each element being the largest element of the individual rows  of the 2D array.   
+    int[] result = new int[matrix.length];
+    for (int i = 0; i < matrix.length; i++) {
+        result[i] = largest(matrix[i]);
+    }
+    return(result);
 }
+/*
 public static  int sum(int[][] arr) {
  
 }

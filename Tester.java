@@ -23,14 +23,21 @@ public class Tester {
         System.out.println("Largest(): {-5,-4,-6} --> -4 | " + ArrayOps.largest(arr5) );
         System.out.println("Largest(): {-5, -4, -6, 10, 13, 100, -2} --> 100 | " + ArrayOps.largest(arr6) );
 
-        //
+        System.out.println();
+
         //tests for sumRows
         int[][] a = new int[][]{ {5,10}, {20,10}, {40,60} };
         int[][] b = new int[][]{ {5,10} };
         int[][] c = new int[][]{{}};
-        System.out.println("SumRows(): {{5,10}{20,10}{40,60}} --> {15,30,100} |" + Arrays.toString( ArrayOps.sumRows(a) ) );
+        System.out.println("SumRows(): {{5,10}{20,10}{40,60}} --> {15,30,100} | " + Arrays.toString( ArrayOps.sumRows(a) ) );
         System.out.println("SumRows(): {{5,10}} --> {15,30,100} | " + Arrays.toString( ArrayOps.sumRows(b) ) );  
         System.out.println("SumRows(): {{}} --> {} | " + Arrays.toString( ArrayOps.sumRows(c) ) );  
+
+        System.out.println();
+
+        //testsfor largestinrows
+        System.out.println("LargestInRows(): {{5,10}{20,10}{40,60}} --> {10,20,60} | " + Arrays.toString( ArrayOps.largestInRows(a) ) );
+        System.out.println("LargestInRows(): {{5,10}} --> {10} | " + Arrays.toString( ArrayOps.largestInRows(b) ) );
     }
 
 }
